@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+	body {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	textarea {
+		width: 400px;
+		height: 50px;
+	}
+
+	p:last-child {
+		float: right;
+		padding-right: 190px;
+	}
+
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="textarea-plugin.js"></script>
+</head>
+<body>
+  <div id="container">
+	  <p>Textarea Character Count (jQuery)</p>
+		<textarea id="myTextarea"></textarea>
+		<p><span id="remainingCharacters"></span> characters remaining.</p>	
+  </div>
+<script>
+	$('#myTextarea').textareaWordCount({
+	  characterLimit: 20,
+	  remainingContainerId: "#remainingCharacters"
+	});
+</script>
+
+</body>
+</html>
