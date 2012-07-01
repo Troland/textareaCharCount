@@ -1,0 +1,12 @@
+This is jquery plugin for textarea character count, to test this follow these steps
+
+1. Clone from github
+
+git clone https://github.com/sonchau/textareaCharCount.git
+
+2. cd textareaCharCount
+
+3. open textarea.html on the web browser and start typing
+
+
+
