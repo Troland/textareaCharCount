@@ -1,4 +1,4 @@
-This is jquery plugin for textarea character count, to test this follow these steps
+This is jquery plugin for textarea character count, to test this code follow these steps
 
 1. Clone from github
 
@@ -8,5 +8,24 @@ git clone https://github.com/sonchau/textareaCharCount.git
 
 3. open textarea.html on the web browser and start typing
 
+How to use
 
+1. Create a textarea with ID myTextarea and span with ID remainingContainerId
 
+2. Call textarea jquery plugin
+
+<script>
+	$('#myTextarea').textareaWordCount({
+	  characterLimit: 20,
+	  remainingContainerId: "#remainingCharacters"
+	});
+</script>
+
+NOTE:
+
+- Textarea ID and span ID are required
+- characterLimit is optional, if not set it will default to 1000
+
+Jasmine test
+
+Jasmine unit test can be viewed by opening test/runner.html
