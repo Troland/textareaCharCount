@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Textarea Character count jQuery Test Runner</title>
+
+		<link rel="stylesheet" type="text/css" href="lib/jasmine.css">
+
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="../textarea-plugin.js"></script>
+
+		<script type="text/javascript" src="lib/jasmine.js"></script>
+		<script type="text/javascript" src="lib/jasmine-html.js"></script>
+		<script type="text/javascript" src="lib/jasmine-jquery.js"></script>
+
+		<script type="text/javascript" src="spec.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+			jasmine.getEnv().execute();
+		</script>
+	</body>
+</html>
