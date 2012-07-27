@@ -48,7 +48,7 @@
         // e.g., this.element and this.options
         $(this.options.remainingContainerId).html(this.options.characterLimit);
         var context = this, charactersUsed, charactersRemaining;
-        $(this.element).bind('keyup', function(){
+        $(this.element).bind('keyup paste input', function(){
 			charactersUsed = $(this).val().length;
 			if(charactersUsed > context.options.characterLimit){
 				charactersUsed = context.options.characterLimit;  
